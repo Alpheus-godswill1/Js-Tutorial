@@ -439,3 +439,37 @@ c(hity);
 const harty = ['quee','unc','br','vhai']
 harty.splice(1,0,'foo')
 c(harty);
+
+
+/*Array Searching and Looping  */
+
+//IndexOf()
+
+const vbin = ['a','b','c'];
+c(vbin.indexOf('c'));
+c(vbin.indexOf('d'))//-1 Negative One shows that the is no such value like that
+
+//filter()--searching an array
+const bmn = ['e','b','y'];
+const set = bmn.filter(function(item){
+    return item > 'e';
+})
+c(set);
+
+
+//find()--Look through first element of an array and finds some criteria
+
+const gino = ['a','bbb','c']
+const founded = gino.find(function(item){
+    return item.length > 1;
+})
+c(founded);//bbb--because it has the longest string length;
+
+
+//forEach()--Lets us excute a function on each elements already setup
+
+const btyvf = ['a','b','c'];
+btyvf.forEach(function(item){
+    c(item);
+})
+
