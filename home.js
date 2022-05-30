@@ -398,3 +398,44 @@ seeReview.addEventListener('click', function(){
 
 //Showing and Hiding DOM Elements
 
+
+/*Creating and Initializing Arrays*/
+let vaues = [1,2,3];
+let vlus = Array.of(1,2,3)
+
+const vluis = ['a' , 'b' , 'c'];
+c(vluis);
+c(typeof vluis);
+c(Array.isArray(vluis));
+
+//Accessing Array Items
+let vruis = ['wed','a', 'b','c'];
+c(vruis[0]);
+c(vruis[1]);
+
+vruis.push('fg');
+c(vruis);
+vruis.pop();
+c(vruis);
+vruis.shift();
+c(vruis);
+vruis.unshift('t');
+console.log(vruis);
+vruis.push('ghh','ck',
+'vlau')
+c(vruis)
+vruis.pop();
+c(vruis)
+
+//using Slice method and Splice Method
+
+const hity = ['agb','bullion','gun'];
+const newHity = hity.slice(1,2);
+c(newHity);
+//using Splice() For Deleting;
+hity.splice(1,2);
+c(hity);
+//using Splice() For Inserting 
+const harty = ['quee','unc','br','vhai']
+harty.splice(1,0,'foo')
+c(harty);
