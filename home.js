@@ -473,3 +473,9 @@ btyvf.forEach(function(item){
     c(item);
 })
 
+const container = document.getElementsByClassName('container');
+
+container[2].classList.add('d-none');
+c(container); 
+
+
