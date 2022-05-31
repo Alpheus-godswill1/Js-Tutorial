@@ -478,4 +478,61 @@ const container = document.getElementsByClassName('container');
 container[2].classList.add('d-none');
 c(container); 
 
+/*Scope and Hoisting*/
+//Global Scope
 
+let gui = 124557;
+
+function showGui(){
+    c(gui);
+}
+showGui();
+
+//Or
+
+const app = {
+    productId : 1112,
+    boy : "john",
+    color : "red"
+}
+
+function  objectApp(){
+    c(app.boy)
+}
+objectApp()
+
+//Function Scope---Note on this scope issue while declaring variables
+
+
+function showProductId(){
+    let lroductId = 1244;
+    c('in showProductId: ',  lroductId);
+
+    function fics(){
+        let lroductId = 7938793;
+
+        c('In fics: ', lroductId)
+    }
+    fics()
+}
+showProductId()
+
+
+//Var and Hoisting-- much better to use Let and Const
+
+// idProduct = 45;
+// c(idProduct);
+// let idProduct = 68;--what is called hoisting
+
+showIdPro()//--what is called hoisting because a function or variable is called or initialiazed before it is declared
+
+function showIdPro(){
+    c("123");
+}
+
+//Undeclared Variables and Strict Mode;
+`use strict`;
+
+uiiProduct = 1234;
+
+c(window.uiiProduct);
